@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+      * {
+        margin: 20px;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        
+      
+        z-index: 1;
+      }
+      body{
+        width:50%;
+        padding: 0;
+        background-color: #fc4a55;
+        transition: all 1.2s linear;
+      }
+      
+
+      .fruit {
+        margin: 20px;
+        font-size: 4em;
+        
+        color: #fff;
+      }
+      nav {
+        position: absolute;
+        right: 20px;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+      }
+      nav a {
+        text-decoration: none;
+        color: #fff;
+        padding: 10px;
+        margin: 10px;
+      }
+      .a {
+        text-decoration: none;
+        color: #fff;
+        padding: 10px;
+        margin: 10px;
+      }
+      nav a:hover {
+        /* padding: 8px;
+        margin: 8px; */
+        border-radius: 23px;
+        background-color: #fff;
+        color: rgb(247, 78, 120);
+      }
+      .a:hover {
+        /* padding: 8px;
+        margin: 8px; */
+        border-radius: 23px;
+        background-color: #000000;
+        color: rgb(247, 78, 120);
+      }
+      .home a {
+        padding: 8px;
+        margin: 8px;
+        border-radius: 23px;
+        background-color: #fff;
+        color: rgb(247, 78, 120);
+      }
+      .list {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        transition:  1s linear;
+        
+      }
+
+      .list li img {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+
+        cursor: pointer;
+        list-style: none;
+        padding: 0px;
+        margin: 10px;
+        position: absolute;
+
+        bottom: 10px;
+        background-color: rgba(250, 253, 255, 0.1);
+        width: 40px;
+        height: 40px;
+        border: 2px solid rgba(250, 253, 255, 0.5);
+        justify-self: center;
+        transition: 2s ease-in-out;
+        animation: floating 3s ease-in-out infinite;
+
+        
+      }
+      #image{
+        transition: 2s ease-in-out;
+        animation: floating 3s ease-in-out infinite;
+      
+
+      }
+      .list li img:hover{
+        transform: translateY(-3px);
+      }
+      @media (max-width: 991px) {
+        nav {
+          display: flex;
+          flex-direction: column;
+        }
+
+        
+        #image {
+          position: absolute;
+          right: 20%;
+          float: right;
+          top: 50%;
+         
+        }
+
+      }
+      @keyframes floating {
+        0% { transform: translate(0,  0px); }
+        50%  { transform: translate(0, 15px); }
+        100%   { transform: translate(0, -0px); }    
+    }
+      p {
+        display: grid;
+        grid-template-columns: 500px;
+      }
+      .container {
+        position:absolute;
+        float: right;
+        list-style: none;
+        /* margin: 2px; */
+
+        display: flex;
+        flex-direction: row;
+       
+        grid-column: auto;
+        right: 20px;
+        bottom: -30px;
+      
+      }
+      .smpng {
+       
+        cursor: pointer;
+        margin: 0px;
+        /* padding: px;  */
+      }
+      .smpng img {
+       height:25px;
+        width: 25px;
+      }
+      .a {
+        position: absolute;
+        left: 100px;
+        padding: 4px 4px 4px 4px;
+        font-size: 20px;
+        background-color: #fff;
+        border-radius: 33px;
+        color: rgb(247, 78, 120);
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .body {
+        position: fixed;
+        z-index: 100;
+      }
+          
+      .click{
+        position:absolute;
+        bottom: 45px;
+        left: 100px;
+      }
+      
+    
+
+    h1{
+      font-size: large;
+      position: absolute;
+      color: rgba(0, 0, 0, 0);   
+      -webkit-text-stroke: 0.5px  #000000;
+      text-transform: capitalize;
+      white-space: nowrap;
+      bottom: -12px ;
+      left: 43%;
+  }
+  h1::before{
+      
+      content: attr(data-text);
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 0;
+      height: 100%;
+      color: #ffffff;
+      /* border-right: 3px solid #01fe87; */
+      -webkit-text-stroke: 0mm #000000;
+      animation: animate 5s linear infinite;
+      overflow: hidden;
+      border-bottom: 5px solid #000000;
+      
+
+  }
+  @keyframes animate{
+      0%{
+          width: 0;
+          border-bottom: 5px solid #ffffff;
+      }
+      100%{
+          width: 100%;
+          border-bottom: 5px solid #ffffff;
+      }
+  }
+ 

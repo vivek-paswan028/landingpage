@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="body"></div>
+      <nav>
+        <li class="home">
+          <a href="#">Home</a>
+        </li>
+        <li><a href="contsctus.html" target="_blank">Contact Us</a></li>
+        <li><a href="about.html" target="_blank">About</a></li>
+        <li><a href="TOS.html" target="_blank">Terms Of Use</a></li>
+      </nav>
+      <div class="fruit">Fruits</div>
+      <img
+        id="image"
+        src="./apple.png"
+        width="400px"
+        alt=""
+        style="float: right; position: absolute; right: 20%"
+      />
+      <div style="color: #fff; font-size: 3em; padding: 10px 1px; margin: 20px">
+        Eat Fresh Fruits
+      </div>
+
+      <ul class="container">
+        <li class="smpng">
+         
+    <a href="https://www.facebook.com/" target="_blank">
+
+      <img src="./facebook (1).png" alt="" width="35px" />
+    </a>
+         
+        </li>
+
+        <li class="smpng">
+          <a href="https://www.instagram.com/" target="_blank">
+
+            <img src="./instagram (1).png" width="35px" alt="" />
+          </a>
+        
+        </li>
+
+        <li class="smpng">
+          <a href="https://www.x.com/"  target="_blank">
+
+            <img src="./twitter (1).png" alt="" width="35px" />
+          </a>
+        
+        </li>
+      </ul>
+
+      <p>
+        Eating fresh fruits offers numerous health benefits due to their rich
+        nutritional content. Fresh fruits are excellent sources of essential
+        vitamins and minerals, such as vitamin C, potassium, folate, and various
+        antioxidants.
+      </p>
+
+      <a
+        class="a"
+        href="https://www.betterhealth.vic.gov.au/health/healthyliving/fruit-and-vegetables#:~:text=They%20are%20a%20good%20source,lower%20your%20cholesterol "
+        target="_blank"
+      >
+        Learn More</a
+      >
+
+      <div class="list">
+        <li data-text="Apple">
+          <img
+            src="./apple.png"
+            alt=""
+            onclick="select('./Apple.png');changebg('#fc4a55')"
+          />
+        </li>
+        <li data-text="pineApple">
+          <img
+            src="./pineApple.png"
+            alt=""
+            onclick="select('./pineApple.png');changebg('#ffb42b')"
+          />
+        </li>
+
+        <li data-text="mango">
+          <img
+            src="./mango.png"
+            alt=""
+            onclick="select('./mango.png');changebg('#ffcc02')"
+          />
+        </li>
+
+        <li data-text="watermelon">
+          <img
+            src="./watermelon.png"
+            alt=""
+            onclick="select('./watermelon.png');changebg('#92ba3c')"
+          />
+        </li>
+        <li data-text="dragonFruits">
+          <img
+            src="./dragonFruits.png"
+            alt=""
+            onclick="select('./dragonFruits.png');changebg('#fb6cb2')"
+          />
+        </li>
+      </div>
+    </section>
+    <div class="click">Click Here For Magic</div>
+    <h1 class="name" data-text="Made with love...">Made with love...</h1>
+   
+    
+
+
+    <script>
+      function changebg(color) {
+        let Bg = document.querySelector("body");
+        Bg.style.background = color;
+      }
+      function select(anything) {
+        document.querySelector("#image").src = anything;
+      }
+    </script>
+  </body>
+</html>
